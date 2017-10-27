@@ -1,0 +1,56 @@
+/*
+参考文献：
+翔泳社「HTML5/CSS3モダンコーディング」
+http://www.shoeisha.co.jp/book/detail/9784798141572
+*/
+
+@charset "UTF-8";
+
+.wf-roundedmplus1c { font-family: "Rounded Mplus 1c"; }
+
+html{
+    font-size: 62.5%;
+}
+*, *::before, *::after{
+    box-sizing: border-box;
+}
+
+body{
+    background: #151515 url('../images/back.jpg') no-repeat fixed center bottom;
+    background-size: cover;
+    color: #fff;
+    text-shadow: 2px 2px 1px #000;
+    text-align: center;
+    font-size: 1.4rem;
+    font-family: 'Lobster', cursive;
+} 
+
+.header{
+    padding: 250px 30px 0px;
+}
+
+.site-title-sub{
+    margin: 0 0 30px;
+    letter-spacing: 1px;
+    font-size: 2.2rem;
+}
+.site-title-sub::before,
+.site-title-sub::after{
+    content: '';
+    display: inline-block;
+    width: 140px;
+    height: 2px;
+    margin: 0 30px;
+    background-color: #fff;
+    vertical-align: middle;
+}
+
+.site-title{
+    margin: 30px 0  10px;
+    font-size: 7.6m;
+}
+
+.site-discription{
+    margin-bottom: 50px;
+    font-size: 2rem;
+}
