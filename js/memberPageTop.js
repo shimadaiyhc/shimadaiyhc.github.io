@@ -6,7 +6,7 @@ if(document.referrer.length !=0){
         document.write(ref);　//デバッグ用
         otherAccessError();
         function otherAccessError(){
-            location.href="../error/directAccessError.html";
+            location.href="../error/otherAccessError.html";
         }
     }
     
