@@ -86,12 +86,21 @@ body{
 }
 
 .green-back{
-  background-color: greenyellow;
+  background-color: darkgreen;
 }
 
 .blue-back{
-  background-color: aqua;
+  background-color: darkblue;
 }
+
+.summer > .heading{
+  background-color: darkgreen;
+}
+
+.winter > .heading{
+  background-color: darkblue;
+}
+
 
 /* スマホ・タブレット端末からのアクセス時 */
 @media(max-width: 1024px){
@@ -107,6 +116,26 @@ body{
     background-color: #555;
   }
   
+  .summer > .heading,
+  .winter > .heading{
+    display: inline-block;
+    width: 100%;
+    padding: 20px;
+    border-radius: 4px;
+    text-decoration: none;
+    letter-spacing: 1px;
+  }
+
+  .winter{
+    padding: 0 30px 1px;
+    background-color: deepskyblue;
+  }
+
+  .summer{
+    padding: 0 30px 1px;
+    background-color: limegreen;
+  }
+  
   .member{
     background-color: #000;
   }
@@ -116,15 +145,12 @@ body{
   }
   
   .Twitter{
-    background-color: darkblue;
+    background-color: deepskyblue;
+    padding: 0 0 30px;
   }
   
   .other{
     background-color: #555;
-  }
-  
-  .other > .green-back{
-    background-color: darkgreen;
   }
 }
 
