@@ -127,12 +127,12 @@ body{
   }
 
   .winter{
-    padding: 0 30px 1px;
+    padding: 0 10px 1px;
     background-color: deepskyblue;
   }
 
   .summer{
-    padding: 0 30px 1px;
+    padding: 0 10px 1px;
     background-color: limegreen;
   }
   
