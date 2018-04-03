@@ -82,7 +82,7 @@ body{
 
 .heading{
     display: block;
-    background-color: #999
+    background-color: #999;
 }
 
 .green-back{
@@ -190,6 +190,7 @@ body{
 }
 
 .footer{
-  padding: 12px 0;
+  padding: 12px 0 1px;
   font-size: 1.3rem;
+  background-color: #999
 }
