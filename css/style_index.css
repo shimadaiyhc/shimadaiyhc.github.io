@@ -25,6 +25,13 @@ body{
     font-family: 'Lobster', cursive;
 } 
 
+.center{
+  text-align: center;
+}
+.img-item{
+  display:inline-block;
+}
+
 .wf-roundedmplus1c { font-family: "Rounded Mplus 1c"; }
 
 .header{
@@ -76,4 +83,52 @@ body{
 .heading{
     display: block;
     background-color: #999
+}
+
+.green-back{
+  background-color: greenyellow;
+}
+
+.blue-back{
+  background-color: aqua;
+}
+
+
+@media (max-width: 768px){
+  .site-title-sub::before,
+  .site-title-sub::after{
+    display: block;
+    width: 80%;
+    margin: 10px auto;
+  }
+  
+  .site-title-sub{
+    font-size: 1.7rem;
+  }
+  
+  .site-title{
+    margin-top: 35px;
+    font-size: 5rem;
+  }
+  
+  .header{
+    padding-top: 60px;
+  }
+  
+  .button:hover{
+    opacity: 1;
+  }
+  
+  .heading{
+    font-size: 2.5rem;
+  }
+  
+  body{
+    font-size: 1.3rem;
+  }
+}
+
+.footer{
+  padding: 12px 0;
+  font-size: 1.3rem;
 }

@@ -6,8 +6,7 @@
         <meta name="author" content="ShimadaiYHC">
         <meta name="keywords" content="島大ユース,島根大学ユースホステルクラブ">
         <meta name="description" content="第43期執行部（2017/10）以降の島大ユース公式HPです。">
-        <meta http-equiv="Pragma" content="no-cache">
-        <meta http-equiv="Cache-Control" content="no-cache">
+        <meta name="viewport" content="width=device-width, intial-scale=1.0, minimum-scale=1.0">
         
         <!-- このタイトルがブラウザ上に表示　-->
         <title>島大Y.H.C.|島根大学ユースホステルクラブ公式HP</title>
@@ -21,6 +20,22 @@
         
         <link rel="stylesheet" href="css/style_index.css"> 
         <script src="js/TopPage.js"></script>
+       
+        <!--bxslider -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+
+        <script>
+          $(document).ready(function(){
+            $('.slider').bxSlider({
+              auto: true,
+              slideWidth: 640
+            });
+          });
+        </script>
+
+
     </head>
 
     <body>
@@ -34,11 +49,31 @@
     </header>
     
     <section class="about">
-        <h2 class="heading">Are we doing ?</h2>
-        <p>夏季（４～８月）はキャンプや登山、冬季（１０～３月）は旅行をするサークルです！<br>
-        部会は毎週水曜１２時～と土曜１０時～の週２回行っています！</p>
-        <a class="button wf-roundedmplus1c" href="Activities/">LEARN MORE</a>
-        </section>
+      <h2 class="heading">Are we doing ?</h2>
+      <h3>夏季（４～８月）はキャンプや登山、冬季（１０～３月）は旅行をするサークルです！<br>
+       部会は毎週水曜１２時～と土曜１０時～の週２回行っています！</h3>
+        
+      <h2 class="heading green-back">夏季の活動の様子</h2>
+      <div align="center">
+        <ul class="slider">
+          <li><img src="images/Activities/summer/001.jpg"></li>
+          <li><img src="images/Activities/summer/002.jpg"></li>
+          <li><img src="images/Activities/summer/003.jpg"></li>
+          <li><img src="images/Activities/summer/004.jpg"></li>
+        </ul>
+      </div>
+        
+      <h2 class="heading blue-back">冬季の活動の様子</h2>
+      <div align="center">
+        <ul class="slider">
+          <li><img src="images/Activities/winter/001.jpg"></li>
+          <li><img src="images/Activities/winter/002.jpg"></li>
+           <li><img src="images/Activities/winter/003.jpg"></li>
+           <li><img src="images/Activities/winter/004.jpg"></li>
+        </ul>
+      </div>
+      <!--<a class="button wf-roundedmplus1c" href="Activities/">LEARN MORE</a>-->
+    </section>
         
     <section class="member">
         <h2 class="heading">Are you our members ?</h2>
@@ -62,7 +97,7 @@
     
     
     <!-- 著作権表示 -->
-    <footer class="heading">
+    <footer class="heading footer">
         © 2017 Shimadai Y.H.C.
         </footer>
     </body>
