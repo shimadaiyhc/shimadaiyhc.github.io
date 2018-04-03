@@ -93,7 +93,42 @@ body{
   background-color: aqua;
 }
 
+/* スマホ・タブレット端末からのアクセス時 */
+@media(max-width: 1024px){
+  body{
+    background-image: none;
+  }
+  
+  .header{
+    background-color: #000;
+  }
+  
+  .about{
+    background-color: #555;
+  }
+  
+  .member{
+    background-color: #000;
+  }
+  
+  .member > .button{
+    background-color: darkgreen;
+  }
+  
+  .Twitter{
+    background-color: darkblue;
+  }
+  
+  .other{
+    background-color: #555;
+  }
+  
+  .other > .green-back{
+    background-color: darkgreen;
+  }
+}
 
+/* スマホ端末からのアクセス時 */
 @media (max-width: 768px){
   .site-title-sub::before,
   .site-title-sub::after{
