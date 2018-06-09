@@ -1,10 +1,3 @@
-function enter(){
-  pass = prompt("パスワードを入力してください","");
-  if(pass != "" && pass != null){
-    location.href = pass + '/';
-  }
-}
-
 function toOldPages(){
   if(confirm("旧サイトへジャンプしますか？\n※スマホからはアクセスできません。") == true){
     location.href = "http://shimadaiyouth.bufsiz.jp/";
