@@ -1,13 +1,5 @@
 function toOldPages(){
-  if(confirm("旧サイトへジャンプしますか？\n※スマホからはアクセスできません。") == true){
+  if(confirm("旧サイトへジャンプしますか？\n※OBが運営するサーバーに接続します") == true){
     location.href = "http://shimadaiyouth.bufsiz.jp/";
-  }
-}
-
-function viewReason(){
-  if(confirm("このサイトが作られた理由を見ますか？") == true){
-    if(confirm("本当に見ますか？")==true){
-      location.href = "../about.html";
-     }
   }
 }
