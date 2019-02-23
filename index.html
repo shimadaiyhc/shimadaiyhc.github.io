@@ -2,7 +2,7 @@
 <html lang="ja">
 
   <head>
-    <meta charset="UTF-8"><!-- 主にiOS端末での文字化け防止 -->
+    <meta charset="UTF-8">
     <meta name="author" content="ShimadaiYHC">
     <meta name="keywords" content="島大ユース,島根大学ユースホステルクラブ">
     <meta name="description" content="第43期執行部（2017/10）以降の島大ユース公式HPです。">
@@ -17,20 +17,29 @@
     <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
     <link href="https://fonts.googleapis.com/earlyaccess/roundedmplus1c.css" rel="stylesheet" />
     <!-- Google Fonts ここまで -->
-        
+    
     <link rel="stylesheet" href="css/style_index.css"> 
-    <script src="js/TopPage.js"></script>
-       
-    <!--bxslider -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+    <script src="js/script.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+       
+    <!--Plugin -->
+    <link rel="stylesheet" href="css/mbExtruder.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
     <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+    <script src="js/jquery.hoverIntent.min.js"></script>
+    <script src="js/jquery.mb.flipText.js"></script>
+    <script src="js/mbExtruder.js"></script>
+
+    <script src="js/pace.min.js"></script>
 
     <script>
-      $(document).ready(function(){
+      $(function(){
         $('.slider').bxSlider({
           auto: true,
           slideWidth: 640
+        });
+        $("#extruder").buildMbExtruder({
+          position : "left" 
         });
       });
     </script>
@@ -44,25 +53,23 @@
     <noscript><div align="right"><img src="//analyzer54.fc2.com/ana/icon.php?uid=2784055&ref=&href=&wid=0&hei=0&col=0" /></div></noscript>
     <!-- [FC2 Analyzer]  -->
 
-   
-    <!--JavaScriptがオフ・非対応時の対応-->
-    <noscript><h1 class="heading wf-roundedmplus1c">このサイトの正常な表示・動作には、JavaScriptが必要です。<br>JavaScript対応のブラウザで、JavaScriptを有効にしてから再度アクセスしてください。</h1></noscript>
-    
-    <header class="header">
-      <p class="site-title-sub">Shimane University's Circle</p>
-      <img src="images/logo.svg" class="img">
-      <h1 class="site-title">Welcome to Shmadai Y.H.C.!</h1>
-      <p class="site-discription wf-roundedmplus1c">島根大学ユースホステルクラブ</p>
+    <header class="header" id="Top">
+      <!--JavaScriptがオフ・非対応時の対応-->
+      <noscript><h1 class="heading wf-roundedmplus1c">このサイトの正常な表示・動作には、JavaScriptが必要です。<br>JavaScript対応のブラウザで、JavaScriptを有効にしてから再度アクセスしてください。</h1></noscript>
+      <p class="site-title-sub wf-roundedmplus1c">島根大学ユースホステルクラブ</p>
+      <img src="images/logo2.svg" class="logo-img">
     </header>
     
-    <section class="about">
+    <section class="about" id="about">
       <h2 class="heading">Are we doing ?</h2>
       <h3>夏季（４～８月）はキャンプや登山、冬季（１０～３月）は旅行をするサークルです！<br>
-       部会は毎週水曜１２時～と土曜１０時～の週２回行っています！</h3>
+       部会は毎週水曜１２時～と土曜１０時～の週２回行っています！<br>
+      必要最低限の装備はご購入頂きますが、できるだけ安い交通費・宿泊費で行けるように自分たちで計画を練り、登山や旅行を楽しみましょう！</h3>
       
       
-      <section class="summer">
+      <section class="summer" id="summer">
         <h2 class="heading">夏季の活動の様子</h2>
+        <h3>夏季（４～８月）には登山をします。BBQや頂上からの絶景など、様々なアウトドア体験ができます！<br>「運動は苦手だけど、大学ではアウトドア系にも挑戦してみたい」という方にもオススメです！！</h3>
         <div align="center">
           <ul class="slider">
             <li><img src="images/Activities/summer/001.jpg"></li>
@@ -73,8 +80,9 @@
         </div>
       </section> 
       
-      <section class="winter">
+      <section class="winter" id="winter">
         <h2 class="heading">冬季の活動の様子</h2>
+        <h3>冬季（１０～３月）には旅行をします。旅行先は、部員たちで案を出し合って旅行先を決めます。<br>「貴方の行ってみたい場所」に行ける大チャンスです！交通費や宿泊費もできるだけ安く済ませるので、金銭面の心配も少ないです！</h3>
         <div align="center">
           <ul class="slider">
             <li><img src="images/Activities/winter/001.jpg"></li>
@@ -88,28 +96,13 @@
       <!--<a class="button wf-roundedmplus1c" href="Activities/">LEARN MORE</a>-->
     </section>
     
-    <section class="Twitter">
+    <section class="Twitter" id="twitter">
       <h2 class="heading">Please check our Twitter !</h2>
+      <h3>Twitterではこれまでの活動の様子をつぶやいています。<br>少しでも興味を持った方は是非一度、覗いてみてください！</h3>
       <a class="twitter-timeline"  href="https://twitter.com/shimadaiyouth" data-widget-id="345921206878363648" width="300" height="500">@shimadaiyouth からのツイート</a>
       <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
     </section>
     
-    <!--<section class="other">
-      <h2 class="heading">Other</h2>
-      <p class="button" onclick="toOldPages()">旧サイトへ</p>
-      <!--
-      ※このサイトについて※
-      当サイトは、GithubPagesによって運営されています。
-      上記ボタンでのリンク先はOBが個人的に運営しているものであり、
-      2018年10月11日現在、現役部員は上記サイトの運営に関与しておりません。
-      ※追記※リンク先にアクセス不可能になっていたため、一時的に非表示にしています。
-      詳細はJavascript（TopPage.jsに記述）のtoOldPages関数のコメントを参照。
-      
-      尚、過去のコミットの履歴やソースコード、編集参加者などは全て、
-      GitHubのプロジェクトページ（github[.]com/shimadaiyhc/shimadaiyhc[.]github[.]io）
-      にて公開されています。※上記URLにアクセスの際は、[.]の前後にある[]を削除してアクセスしてください。
-      -->  
-    <!--</section>-->
     
     
     
@@ -120,5 +113,13 @@
       <!-- FC2カウンター ここまで -->
       <p class="heading">© 2017 Shimadai Y.H.C.</p>
     </footer>
+    <div id="extruder" class="a {title:'目次'}">
+      <div class="menu-contents" onclick="move('#top')">Top</div>
+      <div class="menu-contents" onclick="move('#about')">About</div>
+      <div class="menu-contents" onclick="move('#summer')">Summer<br>Activity</div>
+      <div class="menu-contents" onclick="move('#winter')">Winter<br>Activity</div>
+      <div class="menu-contents" onclick="move('#twitter')">Twitter</div>
+    </div>
+    
   </body>
 </html>

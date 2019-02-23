@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="description" content="mb.extruder のデモでーす。">
+<title>mb.extruder - jQueryプラグイン</title>
+<link href="css/mbExtruder.css" media="all" rel="stylesheet" type="text/css">
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.js"></script>
+<script src="js/jquery.hoverIntent.min.js"></script>
+<script src="js/jquery.mb.flipText.js"></script>
+<script src="js/mbExtruder.js"></script>
+<script>
+$(function(){
+  $("#demo-left").buildMbExtruder({
+    position:"left",
+    width:300,
+    extruderOpacity:.8,
+    hidePanelsOnClose:false,
+    accordionPanels:false,
+    onExtOpen:function(){},
+    onExtContentLoad:function(){$("#demo-left").openPanel();},
+    onExtClose:function(){}
+  });
+});
+</script>
+</head>
+<body>
+<div style="text-align:center;">
+  <h1>mb.extruder のデモでーす。</h1>
+  <p>ページをスクロールしてみてください。</p>
+</div>
+<div style="height: 3000px;">
+  <div id="demo-left" class="a {title:'左のメニュー'}">あいてむ</div>
+</div>
+</body>
+</html>
